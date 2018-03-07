@@ -9,15 +9,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SpeckleRevitTest
+namespace SpeckleRevitPlugin
 {
     public partial class SpeckleRevitForm : Form
     {
-        private UIApplication uiapp;
-        public SpeckleRevitForm(ExternalCommandData commandData)
+        /// <summary>
+        /// Speckle Revit Form
+        /// </summary>
+        /// <param name="settings"></param>
+        public SpeckleRevitForm()
         {
             InitializeComponent();
-            uiapp = commandData.Application;
         }
     }
 }
